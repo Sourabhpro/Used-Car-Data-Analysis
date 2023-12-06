@@ -35,3 +35,9 @@ SELECT name, year, km_driven
 FROM car_dekho
 WHERE km_driven < 30000 AND fuel = "petrol" AND year BETWEEN 2015 and 2020;
 ORDER BY km_driven;
+
+-- list of petrol cars names that have been driven for less than 30000 kms from the year 2015 to 2020 having seatig capacity more than 4--
+SELECT name, year, km_driven, seats
+FROM car_dekho
+WHERE km_driven < 30000 AND fuel = "petrol" AND year BETWEEN 2015 and 2020 AND seats > 4;
+ORDER BY km_driven;
